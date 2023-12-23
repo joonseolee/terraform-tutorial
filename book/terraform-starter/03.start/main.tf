@@ -1,5 +1,5 @@
 variable "file_name" {
-  default = "step0.txt"
+  default = "step6.txt"
 }
 
 resource "local_file" "abc" {
@@ -12,6 +12,14 @@ resource "local_file" "abc" {
       error_message = "file name is not \"step06.txt\""
     }
   }
+}
+
+output "file_id" {
+  value = local_file.abc.id
+}
+
+output "file_abspath" {
+  value = abspath(local_file.abc.filename)
 }
 
 resource "local_file" "def" {
