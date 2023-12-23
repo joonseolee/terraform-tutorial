@@ -79,3 +79,35 @@ output "C_group" {
     for name, user in var.members: user.role => name...
   }
 }
+
+# provisioner
+
+variable "sensitive_content" {
+  default = "secret"
+  sensitive = true
+}
+
+resource "local_file" "provisioner_test" {
+  content = upper(var.sensitive_content)
+  filename = "${path.module}/foo.bar"
+
+  provisioner "local-exec" {
+    command = "echo The content is ${self.content}~~"
+  }
+
+  provisioner "local-exec" {
+    command = "abc"
+    on_failure = continue
+  }
+
+  provisioner "local-exec" {
+    when = destroy
+    command = <<EOF
+    echo The deleting filename is ${self.filename}
+    echo goodbye...ㅠ $NAME
+    EOF
+    environment = {
+      NAME = "joon"
+    }
+  }
+}
