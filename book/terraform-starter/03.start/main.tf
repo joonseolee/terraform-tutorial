@@ -27,3 +27,20 @@ resource "local_file" "def" {
   content    = "def!"
   filename   = "${path.module}/def.txt"
 }
+
+variable "names" {
+  type = list(string)
+  default = [ "a", "b", "c" ]
+}
+
+resource "local_file" "name_index_file" {
+  count = length(var.names)
+  content = "looping!"
+  filename = "${path.module}/abc-${count.index}.txt"
+}
+
+resource "local_file" "name_file" {
+  count = length(var.names)
+  content = "looping!"
+  filename = "${path.module}/abc-name-${element(var.names, count.index)}.txt"
+}
