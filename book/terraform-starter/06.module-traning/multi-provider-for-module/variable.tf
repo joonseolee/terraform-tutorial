@@ -1,0 +1,14 @@
+variable "aws_access_key" {
+  description = "access_key"
+  default     = "ASIAYAEHEO3AKJXZPDWY"
+}
+
+variable "aws_secret_key" {
+  description = "secret_key"
+  default     = "QkMr79kB89KMjhV7HqMnx0k5YvomXjdvvzLoRa9s"
+}
+
+variable "aws_token" {
+  description = "token"
+  default     = "IQoJb3JpZ2luX2VjEOP//////////wEaDmFwLW5vcnRoZWFzdC0yIkYwRAIgYrtW9ZUydZ4ghYPQKzmX+GERKYBEbehJkpBoSVkcdfECICMlAGrK7lOLGVYBKRVyNgVveCuH5jQZDG++rnzpDJpoKoUDCGwQAxoMNTUwMDM5MjIxOTUyIgxrtBye0Ac4Y+vgMfgq4gJ1fDyV6QoydLDj/vLN8YgWsKqj7hotUWUPEI46hX0G4zusPtayjhrtP07chuZgQG2GpOApXzOOqt9GFoOLtwXcHAUG9ve+i4GikGXGU+A2hfFCYIQ2wRgm3P8Cjr6q2xgbirmGhHAze03m3kt5JAshFdkD1EciIcZLWP/nD2eWP01rAx8I8TKvmel+ZrOD1k/nY/0EeY1w30S+0VBEQF/ymIYoMMHPsP2u2VQVuiQVMkAbrBI7sO5uj5mkBl5simXi/89yTFvWjMuHUMq2U166u8WCXq0BRXkkK8r16pfqGKthuRWPc6DU3lVxksgfF3+EQV4GAHkqq0itJyrbv70CeWD5bgeAn+yWB6BXnZHvPdvAadhc8/jPw7IYXxAIcPGziPTdsfUFxzism60D5hwpTXat5AklrIcRQEWEgxjTRGQtumeSnnNvY57xsQ7F1xC25KUlDiQ4/0buNb7MnyGgBf0wi+GjrAY6pwGf15POh1woSrDLLOKA32eG7B2dODscFwzVG4omQvcAWfpi7MWXqJiA4gmcqAdD+Sknb9x6Ry60QCsoMIQ1hP9CwpSh0KzvyjWuoDAWAmIlTycO96+P7SPGHmWNcXO8UyXudIfGWFxqwNpP2zAhcuK8zEWOpwse7rZZMbZUhDzc1hZdEU2Zfom6pkbi6xG0nn83Umzi6nHFIFG6WnmV8H/b7blySQCDlA=="
+}
